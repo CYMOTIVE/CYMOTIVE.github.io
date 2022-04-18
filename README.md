@@ -1,4 +1,4 @@
 # Cymotive PT Challenge
 
-This page hosts the Challenge
+The Challenge description is in /challenge
 
