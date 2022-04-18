@@ -4,58 +4,66 @@ layout: default
 
 
 <style>
-    table,img {
+    table,
+    img {
         width: "100%";
         border: "0";
         table-layout: fixed;
     }
-    td, th {
+
+    td,
+    th {
         width: "(100/2)%";
         word-wrap: break-word;
     }
-    a{
+
+    a {
         color: rgb(111, 208, 246)
     }
 </style>
+
 <body>
     <div>
-            <p dir="auto">The task at hand is to research the flagship product of a Dental Hygiene company "SmarTeeth",
-                which is advertised as "the future of toothbrushes".</p>
-            <p dir="auto">'SmarTeeth' proudly states that their product comes built-in with an immutable secret from the
-                factory, and further enhances its security by acquiring a stronger secret when first initialized. They
-                also state that all external communications are encrypted.</p>
-            <p dir="auto">After initial research, we were able to extract two strings (one from each of the devices). We
-                are not sure what they are, but we believe they contain some type of unique ID for the device</p>
-            <p dir="auto">
-                The two strings and their acquired secrets  are seen below:
-            </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Device Serial Number (as provided on the manufacturer sticker)</th>
-                        <th>Acquired secret</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>A7R38T</td>
-                        <td>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b290YnJ1c2hfaWQiOiJTbWFyVGVldGgtUHJvLUE3UjM4VCJ9
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>A9K3ZZ</td>
-                        <td>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b290YnJ1c2hfaWQiOiJTbWFyVGVldGgtUHJvLUE5SzNaWiJ9.VerC8eIpKidetYKthGNOmsHMYcpRjVqhS_IZOs_xTO4
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <p dir="auto">We also found a URL that is expected to be the device backend: <a
-                    href="https://what-sould-be-here" rel="nofollow">https://what-sould-be-here</a>
-                Your Goal:
-                Research the security procedures the device conducts against the backend, and think of
-                potential ways to circumvent them or gain higher privileges.
-                In this task expect to reveal secrets or find ways to trick the backend into thinking you are something you are not.
-            </p>
+        <p dir="auto">The task at hand is to research the flagship product of a Dental Hygiene company "SmarTeeth",
+            which is advertised as "the future of toothbrushes".</p>
+        <p dir="auto">'SmarTeeth' proudly states that their product comes built-in with an immutable secret from the
+            factory, and further enhances its security by acquiring a stronger secret when first initialized. They
+            also state that all external communications are encrypted.</p>
+        <p dir="auto">After initial research, we were able to extract two strings (one from each of the devices). We
+            are not sure what they are, but we believe they contain some type of unique ID for the device</p>
+        <p dir="auto">
+            The two strings and their acquired secrets are seen below:
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Device Serial Number (as provided on the manufacturer sticker)</th>
+                    <th>Acquired secret</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A7R38T</td>
+                    <td>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b290YnJ1c2hfaWQiOiJTbWFyVGVldGgtUHJvLUE3UjM4VCJ9.gQrukj7lvbG04zNllhSvFQnOJs0qgV2hccwVJbRFz0w
+                    </td>
+                </tr>
+                <tr>
+                    <td>A9K3ZZ</td>
+                    <td>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b290YnJ1c2hfaWQiOiJTbWFyVGVldGgtUHJvLUE5SzNaWiJ9.VerC8eIpKidetYKthGNOmsHMYcpRjVqhS_IZOs_xTO4
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p dir="auto">We also found a URL that is expected to be the device backend:
+            <a href="https://what-sould-be-here" rel="nofollow">https://challenge.cymotive.com:8443/</a>
+        </p>
+        <p dir="auto">Your Goal:</p>
+        <p dir="auto">
+            Research the security procedures the device conducts against the backend, and think of
+            potential ways to circumvent them or gain higher privileges.
+            In this task expect to reveal secrets or find ways to trick the backend into thinking you are something you
+            are not.
+        </p>
     </div>
     <img src="assets/img/LOGOW.png">
 </body>
